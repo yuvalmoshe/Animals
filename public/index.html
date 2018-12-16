@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body class="body">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+               <div class="page-header">
+                       <h1>Animals</h1>
+                </div>
+            <div class="animals"></div>
+            <form class="animal-form">
+                <h3>Add Animal</h3>
+            <div class= "form-group">Name:
+                    <input list="browsers" type="text" class="form-control" id="animalText" placeholder="Werite Name" >
+                    <datalist id="browsers">
+                            <option value="Dog">
+                            <option value="Cat">
+                            <option value="Frog">
+                            <option value="Cow">
+                            <option value="Unicorn">
+                            <option value="Fish">
+
+                          </datalist>
+            </div>
+            <div class="form-group">Magic:
+                    <input list="browsers1" type="text" class="form-control" id="magicText" placeholder="Werite Magic">
+                    <datalist id="browsers1">
+                            <option value="Arcane">
+                            <option value="Elemental">
+                            <option value="Mental">
+                            <option value="Alicorn">
+                            <option value="Fly">
+                          </datalist>
+                  </div>
+                  <button type="button" class="btn btn-default" id=addAnimal>Submit</button>
+                  <br><br>
+            </form>
+          </div>
+        </div>
+    </div>
+
+    <script id="animals-template" type="text/x-handlebars-template">
+        <ul>
+        {{#each text}}
+        <div id="animal">
+        <li class="animal">Animal: {{text}}</li>
+        <li class="magic">Magic: {{magic}}</li>
+        <button type="button" class="btn btn-default remove-animal">Remove</button>
+        </div>
+        {{/each}}
+        </ul>
+    </script>
+
+        <script src="jquery/dist/jquery.js"></script>
+        <script src="handlebars/dist/handlebars.js"></script>
+    <script src="main.js" type= module></script>
+</body>
+</html>

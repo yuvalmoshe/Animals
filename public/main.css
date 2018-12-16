@@ -1,0 +1,28 @@
+.page-header{
+    font-family: 'Amaranth', sans-serif;
+}
+.animal-form{
+    font-family: 'Amaranth', sans-serif;
+
+}
+
+.animal{
+    font-family: 'Amaranth', sans-serif;
+}
+
+.magic {
+    font-family: 'Amaranth', sans-serif;
+}
+
+.remove-animal{
+    font-family: 'Amaranth', sans-serif;
+    font-size: 15px;
+}
+
+.body{
+    background-image: url("https://cdn5.eyeem.com/thumb/845f22d4f3ec65726a9ff288cd15cea543778e2b-1538857124469/w/850");
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    
+}
